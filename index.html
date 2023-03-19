@@ -84,7 +84,19 @@
 					</header>
 					<p>Please allow for 0-3 business days for a response.</p>
 					<ul class="actions special">
-						<li><a href="mailto: Satejp10@gmail.com" class="button wide primary">Email Me</a></li>
+						<head>
+							<title>Copy Email Address</title>
+							<script>
+								function copyEmail() {
+									var email = "Satejp10@gmail.com"; 
+									navigator.clipboard.writeText(email);
+									alert("Email address copied: " + email);
+								}
+							</script>
+						</head>
+						<body>
+							<button onclick="copyEmail()">Email Me</button>
+						</body>	
 						<li><a href="https://drive.google.com/uc?export=download&id=1PM1tbmpEqgRV9frTZEEW32CUPTvgYJPP" class="button wide primary">View Resume</a></li>
 						<!--<li><a href="#" class="button wide">Learn More</a></li>-->
 					</ul>
